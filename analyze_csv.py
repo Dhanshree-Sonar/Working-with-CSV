@@ -20,7 +20,7 @@ with open('DART_Bus_Stops.csv', 'rb') as csvfile:
             stop_names.append(row[1])
 
     if stop_names:
-        print (bus_no + ' number bus stops at below stops')
+        print (bus_no + ' number bus stops at ' + str(len(stop_names))+ ' stops:\n')
         print ('\n'.join(name for name in stop_names))
     else:
         print (bus_no + ' number bus\' stops data not available')
