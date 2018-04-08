@@ -10,8 +10,17 @@ with open('DART_Bus_Stops.csv', 'rb') as csvfile:
 
     # Take input from user
     print ('Please provide bus no to see the stop names for that particular bus!')
-    bus_no = input('Enter the bus number: ' )
+    bus_no = str(input('Enter the bus number: ' ))
 
     # Scan the csv data
+    stop_names = []
     for row in reader:
-        print row
+        # row[7] (routes) has bus nos which stops at particular bus stop
+        if bus_no in row[7]:
+            stop_names.append(row[1])
+
+    if stop_names:
+        print (bus_no + ' number bus stops at below stops')
+        print ('\n'.join(name for name in stop_names))
+    else:
+        print (bus_no + ' number bus\' stops data not available')
