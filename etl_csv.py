@@ -10,6 +10,7 @@ table = (
 
 new_table = table.cut('DEPT_NAME','APPROX_AMT')
 
+sort_table = etl.sort(new_table, key=['DEPT_NAME'])
 
-print '\nDepartment wise Credit transaction for year 2017'
-print new_table
+print '\nDepartment wise credit transaction for year 2017'
+print sort_table
