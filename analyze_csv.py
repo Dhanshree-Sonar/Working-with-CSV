@@ -24,3 +24,22 @@ with open('DART_Bus_Stops.csv', 'rb') as csvfile:
         print ('\n'.join(name for name in stop_names))
     else:
         print (bus_no + ' number bus\' stops data not available')
+
+##Sample Output:
+##
+##BJECTID STOPNAME SHAPE STOPID STOPABBR BENCH SHELTER ROUTES COUNTY LON LAT
+##Please provide bus no to see the stop names for that particular bus!
+##Enter the bus number: 10
+##10 number bus stops at 323 stops:
+##
+##AMTRAK STATION & ML KING-FRENCH
+##10TH ST @ MARKET ST
+##DEL RT 10 @ LIBERTO IND PARK
+##DEL RT 10 & MOORES LAKE SC
+##DEL RT 10 & OP MOORES LAKE SC
+##DEL RT 10 OP RT 10 PLAZA
+##DEL RT 10 @ RT 10 PLAZA
+##10TH ST & TATNALL ST
+##DEL RT 10 @ WAWA
+##BAY RD & BLUE HEN MALL
+##PRESIDENT DR @ BAY RD
