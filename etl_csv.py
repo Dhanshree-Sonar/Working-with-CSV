@@ -14,3 +14,22 @@ sort_table = etl.sort(new_table, key=['DEPT_NAME'])
 
 print '\nDepartment wise credit transaction for year 2017'
 print sort_table
+
+
+##Sample Output:
+##
+##Department wise credit transaction for year 2017
+##+--------------------------------+------------+
+##| DEPT_NAME                      | APPROX_AMT |
+##+================================+============+
+##| academia antonia alonso        | $18K       |
+##+--------------------------------+------------+
+##| advisory counc exceptnl citizn | $2K        |
+##+--------------------------------+------------+
+##| appoquinimink school district  | $774K      |
+##+--------------------------------+------------+
+##| auditor of accounts            | $78K       |
+##+--------------------------------+------------+
+##| brandywine school district     | $146K      |
+##+--------------------------------+------------+
+##
